@@ -18,3 +18,12 @@ function clear_all(){
         y[i].style.backgroundColor="#D3D3D3";
     }
 }
+
+function fill_all(){
+    var drop = document.getElementById("color_val");
+    var color = drop.options[drop.selectedIndex].value;
+    var x = document.getElementsByTagName("TD");
+    for(var i = 0; i<x.length;i++){
+        x[i].style.backgroundColor=color;
+    }
+}
