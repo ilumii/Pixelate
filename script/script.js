@@ -34,7 +34,7 @@ function clear_all(){
     var x = document.getElementsByTagName("TD");
     var y= Array.from(x);
     for(var i = 0; i<y.length;i++){
-        y[i].style.backgroundColor="#D3D3D3";
+        y[i].style.backgroundColor="#A9A9A9";
     }
 }
 
@@ -52,7 +52,7 @@ function fill_nonColored(){
     var color = drop.options[drop.selectedIndex].value;
     var x = document.getElementsByTagName("TD");
     for(var i = 0; i<x.length;i++){
-        if(x[i].style.backgroundColor == ""){
+        if(x[i].style.backgroundColor == "rgb(169, 169, 169)" || x[i].style.backgroundColor == ""){
             x[i].style.backgroundColor = color;
         }
     }
