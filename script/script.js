@@ -10,7 +10,6 @@ function row(){
      
      else{
         newrow = table.insertRow(0);
-        firstrow = document.getElementsByTagName("tr")[0];
         for(let i = 0; i < row.cells.length; i++){
             newrow.insertCell(0);
         }
@@ -26,6 +25,19 @@ function column(){
     else{
         for (var i = 0; i<table.rows.length; i++){
             table.rows[i].insertCell(0);
+        }
+    }
+}
+
+function removerow(){
+    var row = document.getElementById("grid");
+    var table = document.getElementById("table");
+    if(table.rows.length > 1){
+        table.deleteRow(table.length - 1);
+    }
+    else{
+        for(let i = 0; row.cells.length > 0; i++){
+            row.deleteCell(0);
         }
     }
 }
