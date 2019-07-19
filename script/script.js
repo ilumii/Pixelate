@@ -46,3 +46,14 @@ function fill_all(){
         x[i].style.backgroundColor=color;
     }
 }
+
+function fill_nonColored(){
+    var drop = document.getElementById("color_val");
+    var color = drop.options[drop.selectedIndex].value;
+    var x = document.getElementsByTagName("TD");
+    for(var i = 0; i<x.length;i++){
+        if(x[i].style.backgroundColor == ""){
+            x[i].style.backgroundColor = color;
+        }
+    }
+}
