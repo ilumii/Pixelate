@@ -17,10 +17,12 @@ h1{
     font-family: 'Pixel';
     font-size: 55px;
     text-align: center;
+    color: white;
 }
 
 body{
-    background-color: rgba(223, 173, 20,.5);
+    /*background-color: rgba(223, 173, 20,.5);*/
+    background-color: black;
 }
 
 select{
@@ -33,5 +35,13 @@ select{
 
 button{
     border-radius: 20px;
+    -webkit-animation-name: greenPulse;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes greenPulse {
+    from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #89fa00;; -webkit-box-shadow: 0 0 18px #89fa00;; }
+    to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+  }
