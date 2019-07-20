@@ -29,6 +29,19 @@ function column(){
     }
 }
 
+function remove_Column(){
+    var row = document.getElementById("grid");
+    var table = document.getElementById("table");
+    if(table.rows.length == 1){
+        row.deleteCell(0);
+    }
+    else{
+        for (var i = 0; i<table.rows.length; i++){
+            table.rows[i].deleteCell(0);
+        }
+    }
+}
+
 function removerow(){
     var row = document.getElementById("grid");
     var table = document.getElementById("table");
