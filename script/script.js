@@ -37,7 +37,7 @@ function remove_Column(){
     }
     else{
         for (var i = 0; i<table.rows.length; i++){
-            table.rows[i].deleteCell(0);
+            table.rows[i].deleteCell(table.rows.length-1);
         }
     }
 }
