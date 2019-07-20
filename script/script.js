@@ -82,3 +82,16 @@ function fill_nonColored(){
         }
     }
 }
+
+var table = document.getElementsByTagName("table")[0];
+table.addEventListener("mouseover", on_hover);
+function on_hover (){
+    var drop = document.getElementById("color_val");
+    var color = drop.options[drop.selectedIndex].value;
+    if(event.target.tagName == "TD" && (
+        event.target.style.backgroundColor == "rgb(169, 169, 169)" || 
+        event.target.style.backgroundColor == ""))
+    {
+        event.target.style.backgroundColor = color;
+    }
+}
