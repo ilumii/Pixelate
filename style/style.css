@@ -11,7 +11,7 @@ button, select{
 }
 @font-face {
     font-family: 'Pixel'; /*a name to be used later*/
-    src: url('slkscre.ttf'); /*URL to font*/
+    src: url('../slkscre.ttf'); /*URL to font*/
 }
 h1{
     font-family: 'Pixel';
@@ -29,7 +29,7 @@ select{
     -webkit-appearance: none; 
     -moz-appearance: none;
     appearance: none;  
-    background-image:  url('PixArr.png');
+    background-image:  url('../PixArr.png');
     border: 1px ridge skyblue;
 }
 
