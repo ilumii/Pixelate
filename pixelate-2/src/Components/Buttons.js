@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './Buttons.css';
 
 class Buttons extends Component{
     render(){
         return(
-            <div>
+            <div className="buttons">
                 <button> Add Rows </button>
                 <button> Add Columns </button>
                 <button> Remove Rows </button>
