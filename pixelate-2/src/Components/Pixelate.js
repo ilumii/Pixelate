@@ -14,6 +14,11 @@ class Pixelate extends Component {
       }
       table.push(<tr>{children}</tr>)
     }
+    else if(this.props.column === 0 && this.props.row >0){
+      for(let i = 0; i<this.props.row;i++){
+        table.push(<tr>{<td>{}</td>}</tr>)
+      }
+    }
     else{
       for (let i = 0; i < this.props.row; i++) {
         let children = []

@@ -12,33 +12,63 @@ class App extends Component {
   }
 
   addColumn = () =>{
-    let temp = this.state.column+1;
-    this.setState({
-      column: temp
-    })
+    if(this.state.column === 0 && this.state.row > 0){
+      let temp = this.state.column+2;
+      this.setState({
+        column: temp
+      })
+    }
+    else{
+      let temp = this.state.column+1;
+      this.setState({
+        column: temp
+      })
+    }
   }
 
   addRow = () =>{
-    
-    console.log(this.state.row)
-    let temp = this.state.row+1;
-    this.setState({
-      row: temp
-    })
+    if(this.state.column >0 && this.state.row === 0){
+      let temp = this.state.row+2;
+      this.setState({
+        row: temp
+      })
+    }
+    else{
+      let temp = this.state.row+1;
+      this.setState({
+        row: temp
+      })
+    }
   }
 
   removeColumn = () =>{
-    let temp = this.state.column-1;
-    this.setState({
-      column: temp
-    })
+    if(this.state.column <= 1){
+      this.setState({
+        column:0,
+        row:0
+      })
+    }
+    else{
+      let temp = this.state.column-1;
+      this.setState({
+        column: temp
+      })
+    }
   }
 
   removeRow = () =>{
-    let temp = this.state.row-1;
-    this.setState({
-      row: temp
-    })
+    if(this.state.row <= 1){
+      this.setState({
+        column:0,
+        row:0
+      })
+    }
+    else{
+      let temp = this.state.row-1;
+      this.setState({
+        row: temp
+      })
+    }
   }
 
   render() {
