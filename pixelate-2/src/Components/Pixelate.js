@@ -33,7 +33,7 @@ class Pixelate extends Component {
 
   render() {
     return (
-      <div>
+      <div id="pixelate">
         <Header ></Header>
         <Buttons 
         addRow={()=>this.props.addRow()}  

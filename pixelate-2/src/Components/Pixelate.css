@@ -12,3 +12,14 @@ td{
     margin-top: 5vh;
 }
 
+#pixelate{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+h1{
+    margin: 0;
+}
+
+
