@@ -4,11 +4,11 @@ import './Buttons.css';
 class Buttons extends Component{
     render(){
         return(
-            <div className="buttons">
-                <button> Add Rows </button>
-                <button> Add Columns </button>
-                <button> Remove Rows </button>
-                <button> Remove Columns </button>
+            <div>
+                <button onClick={()=>this.props.addRow()}> Add Rows </button>
+                <button onClick={()=>this.props.addColumn()}> Add Columns </button>
+                <button onClick={()=>this.props.removeRow()}> Remove Rows </button>
+                <button onClick={()=>this.props.removeColumn()}> Remove Columns </button>
                 <select>
                     <option> Red </option>
                     <option> Blue</option>
