@@ -4,7 +4,7 @@ import './Buttons.css';
 class Buttons extends Component{
     render(){
         return(
-            <div>
+            <div id="buttons">
                 <button onClick={()=>this.props.addRow()}> Add Rows </button>
                 <button onClick={()=>this.props.addColumn()}> Add Columns </button>
                 <button onClick={()=>this.props.removeRow()}> Remove Rows </button>
